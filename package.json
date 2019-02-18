@@ -1,7 +1,7 @@
 {
   "name": "@armor/semantic-release",
   "description": "Automated semver compliant package publishing",
-  "version": "16.0.0-beta.19",
+  "version": "16.0.0-beta.20",
   "author": "Stephan Bönnemann <stephan@boennemann.me> (http://boennemann.me)",
   "bin": {
     "semantic-release": "bin/semantic-release.js"
