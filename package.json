@@ -1,7 +1,7 @@
 {
   "name": "@armor/semantic-release",
   "description": "Automated semver compliant package publishing",
-  "version": "16.0.0-beta.20",
+  "version": "16.0.0-beta.21",
   "author": "Stephan Bönnemann <stephan@boennemann.me> (http://boennemann.me)",
   "bin": {
     "semantic-release": "bin/semantic-release.js"
@@ -19,11 +19,13 @@
     "Pierre Vanduynslager (https://twitter.com/@pvdlg_)"
   ],
   "dependencies": {
-    "@semantic-release/commit-analyzer": "^7.0.0-beta.1",
-    "@semantic-release/error": "^2.2.0",
-    "@semantic-release/github": "^5.3.0-beta.6",
-    "@semantic-release/npm": "^5.2.0-beta.5",
-    "@semantic-release/release-notes-generator": "^7.1.2",
+    "@armor/conventional-changelog-armor": "1.1.0",
+    "@semantic-release/commit-analyzer": "7.0.0-beta.2",
+    "@semantic-release/error": "2.2.0",
+    "@semantic-release/git": "7.1.0-beta.3",
+    "@semantic-release/github": "5.3.0-beta.8",
+    "@semantic-release/npm": "5.2.0-beta.5",
+    "@semantic-release/release-notes-generator": "7.1.2",
     "aggregate-error": "^2.0.0",
     "cosmiconfig": "^5.0.1",
     "debug": "^4.0.0",
