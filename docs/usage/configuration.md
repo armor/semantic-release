@@ -70,7 +70,7 @@ List of modules or file paths containing a [shareable configuration](shareable-c
 ### branches
 
 Type: `Array`, `String`, `Object`<br>
-Default: `['+([1-9])?(.{+([1-9]),x}).x', 'master', 'next', 'next-major', {name: 'beta', prerelease: true}, {name: 'alpha', prerelease: true}]`<br>
+Default: `['+([0-9])?(.{+([0-9]),x}).x', 'master', 'next', 'next-major', {name: 'beta', prerelease: true}, {name: 'alpha', prerelease: true}]`<br>
 CLI arguments: `--branches`
 
 The branches on which releases should happen. By default **semantic-release** will release:
@@ -80,6 +80,8 @@ The branches on which releases should happen. By default **semantic-release** wi
 - regular releases  to the `next-major` distribution channel from the branch `next-major` if it exists
 - prereleases to the `beta` distribution channel from the branch `beta` if it exists
 - prereleases to the `alpha` distribution channel from the branch `alpha` if it exists
+
+**Note**: If your repository does not have a release branch, then **semantic-release** will fail with an `ERELEASEBRANCHES` error message. If you are using the default configuration, you can fix this error by pushing a `master` branch.
 
 **Note**: Once **semantic-release** is configured, any user with the permission to push commits on one of those branches will be able to publish a release. It is recommended to protect those branches, for example with [GitHub protected branches](https://help.github.com/articles/about-protected-branches).
 
