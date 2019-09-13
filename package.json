@@ -1,7 +1,7 @@
 {
   "name": "@armor/semantic-release",
   "description": "Automated semver compliant package publishing",
-  "version": "16.0.0-beta.24",
+  "version": "16.0.0-beta.25",
   "author": "Stephan Bönnemann <stephan@boennemann.me> (http://boennemann.me)",
   "bin": {
     "semantic-release": "bin/semantic-release.js"
@@ -37,8 +37,8 @@
     "git-log-parser": "^1.2.0",
     "hook-std": "^1.1.0",
     "hosted-git-info": "^2.7.1",
-    "lodash": "^4.17.4",
-    "marked": "^0.6.2",
+    "lodash": "^4.17.15",
+    "marked": "^0.7.0",
     "marked-terminal": "^3.2.0",
     "micromatch": "3.1.5",
     "p-each-series": "^1.0.0",
